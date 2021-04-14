@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Password Generator</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<h1>Random Password Generator</h1>
+		<div class="box">
+			<fom action="" method="POST">
+				<input
+					id="myText"
+					type="number"
+					name="number"
+					placeholder="Enter password length(4 - 16)"
+					required
+				/><br /><br />
+
+				<input
+					id="lower"
+					value="lower"
+					type="checkbox"
+					name="upperCase"
+					id="word"
+				/><label class="check">Include small letters</label> <br />
+				<input
+					id="symbol"
+					value="symbol"
+					type="checkbox"
+					name="upperCase"
+					id="word"
+				/><label class="check">Include Symbols</label><br />
+				<input
+					id="number"
+					value="number"
+					type="checkbox"
+					name="upperCase"
+					id="word"
+				/><label class="check">Include Numbers </label><br /><br />
+
+				<p>
+					Note: If none of the above is selected, By default password contains
+					only capital letters
+				</p>
+				<button onclick="myFunction()">Generate Password</button>
+				<h4 id="password"></h4>
+			</fom>
+		</div>
+
+        <p class="imad">Made by <a href="https://github.com/abdul-imad?tab=repositories">Abdul Imad</a></p>
+		<script src="script.js"></script>
+	</body>
+</html>
